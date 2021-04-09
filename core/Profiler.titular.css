@@ -1,0 +1,80 @@
+/* https://codepen.io/matchboxhero/pen/oGVJXe?editors=1100 */
+.QO-Titular {
+  pointer-events: none;
+  
+  position   : absolute;
+  top        : 0%;
+  left       : 0%;
+  height     : 100%;
+  width      : 100%;
+  user-select: none;
+  
+  -webkit-animation: complete-fadeout cubic-bezier(1,.63,.45,.99) 2.8s;
+          animation: complete-fadeout cubic-bezier(1,.63,.45,.99) 2.8s;
+  -webkit-animation-delay: 770ms;
+          animation-delay: 770ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes complete-fadeout {
+  0%   {opacity: 1; }
+  100% {opacity: 0.18; }
+}
+@keyframes complete-fadeout {
+  0%   {opacity: 1; }
+  100% {opacity: 0.18; }
+}
+
+.QO-Titular svg {
+  width       : 100%;
+  height      : 100%;
+  fill        : none;
+  stroke-width: 0.18;
+}
+.QO-Titular svg tspan > tspan {
+  stroke-dasharray : 500;
+  stroke-dashoffset: -1100;
+}
+.QO-Titular svg tspan > tspan:nth-of-type(1) {
+  -webkit-animation: draw 220ms 130ms forwards;
+          animation: draw 220ms 130ms forwards;
+}
+.QO-Titular svg tspan > tspan:nth-of-type(2) {
+  -webkit-animation: draw 200ms 250ms forwards;
+          animation: draw 200ms 250ms forwards;
+}
+.QO-Titular svg tspan > tspan:nth-of-type(3) {
+  -webkit-animation: draw 180ms 360ms forwards;
+          animation: draw 180ms 360ms forwards;
+}
+.QO-Titular svg tspan > tspan:nth-of-type(4) {
+  -webkit-animation: draw 180ms 460ms forwards;
+          animation: draw 180ms 460ms forwards;
+}
+.QO-Titular svg tspan > tspan:nth-of-type(5) {
+  -webkit-animation: draw 180ms 550ms forwards;
+          animation: draw 180ms 550ms forwards;
+}
+.QO-Titular svg tspan > tspan:nth-of-type(6) {
+  -webkit-animation: draw 180ms 630ms forwards;
+          animation: draw 180ms 630ms forwards;
+}
+.QO-Titular svg tspan > tspan:nth-of-type(7) {
+  -webkit-animation: draw 180ms 710ms forwards;
+          animation: draw 180ms 710ms forwards;
+}
+.QO-Titular svg tspan > tspan:nth-of-type(8) {
+  -webkit-animation: draw 180ms 790ms forwards;
+          animation: draw 180ms 790ms forwards;
+}
+@-webkit-keyframes draw {
+  100% {
+    stroke-dashoffset: 110;
+  }
+}
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 110;
+  }
+}
